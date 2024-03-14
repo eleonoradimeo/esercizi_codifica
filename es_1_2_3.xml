@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--This document contains data on Codifica di Testi.
+Filename: project.xml
+Author: Eleonora Di Meo
+Date: 10/03/2024-->
+
+<root>
+<note>
+<to>Destinatario</to>
+</note>
+<!-- Errore di annidamento degli elementi 'root', 'note' e 'to' -->
+
+
+   <note>
+        <to>Destinatario</to>
+        <from>Mittente</from>
+        <heading>Il mio libro preferito:</heading>
+        <p>
+            <title>Il ritratto di Dorian Gray</title>
+        </p>
+    </note>
+</root>
+
+<!--Correzioni: migliorato l'annidamento
+Aggiunta degli elementi siblings <from>, <heading>, <p>
+Aggiunta dell'elemento child <title>-->

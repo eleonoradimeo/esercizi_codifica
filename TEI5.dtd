@@ -1,0 +1,37 @@
+<!-- ESERCIZIO 5:
+header: obbligatrio una volta sola
+facsimile: opzionale una volta sola
+testo: obbligatorio una o più volte
+testo: mixed content con possibile elemento <seg>
+
+    Attributi: 
+    header: type:(fixed, CDATA "intestazione"); lang(opzionale, NMTOKEN)
+    facsimile: source:(obbligatorio); ref(opzionale, IDREFS)
+    testo: id(obbligatorio, ID) type(opzionale contenuto testuale)
+-->
+
+
+<!ELEMENT TEI (header, facsimile, testo)>
+<!ELEMENT header (#PCDATA) >
+<!ELEMENT facsimile (#PCDATA) >
+<!ELEMENT testo (#PCDATA|seg)*>
+
+<!--SINTASSI:
+<!ATTLIST   
+nome-elemento 
+nome-attributo 
+tipo-dato-atteso 
+stato-attributo 
+default-value
+> -->
+<!ATTLIST header
+    type CDATA #FIXED "intestazione"
+    lang NMTOKEN #IMPLIED>
+
+<!ATTLIST facsimile
+    source CDATA #REQUIRED
+    ref IDREFS #IMPLIED >
+
+<!ATTLIST testo
+    id ID #REQUIRED
+    type CDATA #IMPLIED>

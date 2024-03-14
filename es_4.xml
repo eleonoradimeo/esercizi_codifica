@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "TEI4.dtd"> 
+
+
+<!--ESERCIZIO 4: DEFINIRE I SEGUENTI ELEMENTI:
+elemento root: TEI 
+elementi figli: 
+header (obbligatorio una occorrenza) —> no modificatore
+facsimile (opzionale una occorrenza) —> modificatore ?
+text (obbligatorio almeno una occorrenza) —> modificatore +
+Gli elementi header, facsimile e text hanno tutti un content model testuale. -->
+
+
+<TEI>
+    <header>header</header>
+    <facsimile>facsimile</facsimile>
+    <text>text</text>
+
+
+</TEI>

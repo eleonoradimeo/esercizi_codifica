@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "TEI5.dtd">
+
+<TEI>
+    <header>Header</header>
+    <facsimile source="facsimile">facsimile</facsimile>
+    <testo id="id"></testo>
+</TEI>
